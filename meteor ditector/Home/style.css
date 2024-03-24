@@ -1,0 +1,62 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    border:border-box;
+    font-family:Poppins,serif;
+}
+
+body{
+    min-height:100vh;
+    background-image: url('/meteor ditector/assets/background.avif');
+    background-size: cover;
+    background-position:center;
+}
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 100px;
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    z-index:100;
+}
+
+.logo{
+    font-weight:700;
+    color:#fff;
+    text-decoration: none;
+    /* background-color:rgba(232,232,232,0.25); */
+    border-radius: 30px;
+}
+
+.nav-bar a {
+    position: relative;
+    font-size:18px;
+    color:#fff;
+    text-decoration:none;
+    font-weight: 500;
+    margin-left:40px;
+}
+
+.nav-bar a::before{
+    content:'';
+    position:absolute;
+    top:100%;
+    left:0;
+    width:0;
+    height:2px;
+    background-color:#fff;
+}
+
+.nav-bar a:hover::before{
+    width:100%;
+    transition: all ease 0.5s;
+}
+
